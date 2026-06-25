@@ -11,25 +11,26 @@
 </head>
 <body class="proposal-page">
   <header class="hero" id="inicio">
-    <nav class="proposal-nav" aria-label="Secciones de propuesta">
-      <a href="#resumen">Resumen</a>
-      <a href="#alcances">Alcances</a>
-      <a href="#comparativa">Comparativa</a>
-      <a href="#roadmap">Roadmap</a>
-      <a href="#notas">Notas</a>
+    <nav class="proposal-nav" aria-label="Proposal sections">
+      <a href="#resumen">Overview</a>
+      <a href="#propuestas">Proposals</a>
+      <a href="#tecnico">Technical</a>
+      <a href="#roadmap">Timeline</a>
+      <a href="#notas">Requirements</a>
     </nav>
 
     <div class="topcredit">
-      <span>Flame Tree Season</span>
       <span>Development proposal</span>
     </div>
 
     <div class="float" data-depth="0.12" style="width:130px; top:6%; left:4%; opacity:.55;">
       <img src="./img/04_Visual%20Elements/02_Vector/01_Vector_Petal%201/02_Petal%201_Soft%20Yellow/Petal%201_Soft%20Yellow.png" alt="">
     </div>
+
     <div class="float" data-depth="0.62" style="width:86px; top:64%; left:11%; opacity:.9;">
       <img src="./img/04_Visual%20Elements/02_Vector/02_Vector_Petal%202/01_Petal%202_Flame%20Red/Petal%202_Flame%20Red.png" alt="">
     </div>
+
     <div class="float" data-depth="0.08" style="width:180px; top:10%; right:3%; opacity:.38;">
       <img src="./img/04_Visual%20Elements/02_Vector/03_Vector_Circle/Circle_Accent.png" alt="">
     </div>
@@ -38,14 +39,18 @@
       <div class="logo">
         <img src="./img/01_Logo/02_Logo_Vertical/02_Vertical_Light%20Yellow/Vertical_Light%20Yellow.png" alt="Flame Stamps">
       </div>
+
       <p class="proposal-kicker amiri">Mobile-first campaign platform</p>
+
       <h1 class="tall">Flame <em>Stamps</em></h1>
+
       <p class="sub proposal-hero-copy">
-        Three production scopes for turning the visual prototype into a
-        measurable campaign experience, a moderated archive, and a public
+        A production roadmap for turning the visual prototype into a branded
+        mobile experience, a campaign data platform and, optionally, a public
         participatory installation.
       </p>
     </div>
+
     <div class="scrolldown" aria-hidden="true"></div>
   </header>
 
@@ -54,88 +59,112 @@
       <div class="wm" aria-hidden="true">
         <img src="./img/01_Logo/03_Logo_Mark/03_Mark_Black/Mark_Black.png" alt="">
       </div>
+
       <div class="wrap">
         <p class="eyebrow dark rv in">Overview</p>
-        <h2 class="rv in tall-light">A campaign object that can grow from a personal stamp into a public artwork.</h2>
+
+        <h2 class="rv in tall-light">
+          From a personal stamp to a measurable campaign experience.
+        </h2>
+
         <p class="rv in">
-          Flame Stamps begins as a mobile web experience for Flame Tree Season:
-          visitors capture or upload an image, apply branded shapes and color
-          treatments, generate a downloadable stamp, and keep or share the final
-          output.
+          Flame Stamps is a mobile web experience for Flame Tree Season.
+          Visitors capture or upload an image, apply branded shapes, filters
+          and color treatments, then generate a downloadable stamp.
         </p>
+
         <p class="rv in">
-          The proposal separates the work into three scopes. Each scope can be
-          delivered independently, or combined as a progressive roadmap from
-          launch platform to collective gallery to live installation.
+          The production work can scale in three levels: a functional core
+          platform, a moderated collective gallery, and a public digital tree
+          installation powered by approved user submissions.
         </p>
       </div>
     </section>
 
-    <section class="screens" id="alcances">
+    <section class="screens" id="propuestas">
       <div class="wrap">
         <div class="head">
-          <p class="eyebrow rv in" style="text-align:center;">Development scopes</p>
-          <h2 class="rv in tall-light">Three ways to build the season</h2>
+          <p class="eyebrow rv in" style="text-align:center;">Proposal options</p>
+          <h2 class="rv in tall-light">Three production scopes</h2>
         </div>
 
         <div class="proposal-grid">
           <article class="proposal-card rv in">
-            <p class="eyebrow">Proposal 1</p>
+            <p class="eyebrow">Proposal 01</p>
             <h3>Core Campaign Platform</h3>
+
             <p>
-              A polished mobile-first platform where users create a branded
-              stamp from camera capture or upload, save it to a personal album,
-              and download or share the result.
+              The minimum production version. Users create, save and share
+              personal Flame Stamps through a polished mobile-first experience.
             </p>
+
             <ul class="proposal-list">
-              <li>Landing and mobile creation flow</li>
-              <li>Desktop fallback with QR handoff to mobile</li>
-              <li>Shape, filter and color treatment selection</li>
+              <li>Landing page and mobile creation flow</li>
+              <li>Desktop QR handoff to mobile</li>
+              <li>Camera capture or image upload</li>
+              <li>Shape, filter and color selection</li>
               <li>Stamp generation, album, download and native share</li>
-              <li>Photo database by user/session ID and admin data tools</li>
+              <li>User/session ID, image storage and basic admin dashboard</li>
             </ul>
+
             <dl>
+              <dt>Technical focus</dt>
+              <dd>Frontend stamp generator, Rails backend, database, storage, session model and basic campaign metrics.</dd>
+
               <dt>Estimated development</dt>
               <dd>4 to 5 weeks</dd>
             </dl>
           </article>
 
           <article class="proposal-card rv in">
-            <p class="eyebrow">Proposal 2</p>
-            <h3>Collective Gallery + Moderation</h3>
+            <p class="eyebrow">Proposal 02</p>
+            <h3>Collective Gallery</h3>
+
             <p>
-              An extended platform where users can submit stamps to a shared
-              campaign gallery, while the team reviews, approves, rejects and
-              curates public submissions.
+              Adds public participation. Users can submit their stamps to a
+              campaign gallery, while the team reviews and approves content.
             </p>
+
             <ul class="proposal-list">
               <li>Everything in Core</li>
-              <li>Consent and submit-to-gallery flow</li>
-              <li>Pending, approved, rejected and private visibility states</li>
-              <li>Moderation dashboard with approve, reject and delete actions</li>
+              <li>Submit-to-gallery flow</li>
+              <li>Consent for public display</li>
+              <li>Pending, approved, rejected and private states</li>
+              <li>Moderation dashboard</li>
               <li>Public gallery and approved content feed</li>
             </ul>
+
             <dl>
+              <dt>Technical focus</dt>
+              <dd>Consent tracking, moderation queue, public/private visibility, approved media feed and gallery frontend.</dd>
+
               <dt>Estimated development</dt>
               <dd>6 to 8 weeks</dd>
             </dl>
           </article>
 
           <article class="proposal-card rv in">
-            <p class="eyebrow">Proposal 3</p>
-            <h3>Living Tree Installation</h3>
+            <p class="eyebrow">Proposal 03</p>
+            <h3>Tree Installation</h3>
+
             <p>
-              A public display layer where approved user stamps become part of
-              a growing digital flame tree shown on a screen, projection or
-              venue display.
+              Extends the gallery into a public display layer where approved
+              stamps become part of a growing digital Flame Tree.
             </p>
+
             <ul class="proposal-list">
               <li>Everything in Core and Collective Gallery</li>
               <li>Approved stamp feed for display mode</li>
-              <li>Basic crowdsourced tree for one device and resolution</li>
-              <li>Animation, fallback screen and technical handoff documentation</li>
+              <li>Basic crowdsourced tree for one target resolution</li>
+              <li>Display animation and fallback screen</li>
+              <li>Technical handoff documentation</li>
+              <li>Optional WebGL, particles and responsive display modes</li>
             </ul>
+
             <dl>
+              <dt>Technical focus</dt>
+              <dd>Installation frontend, curated feed integration, display-specific layout, refresh logic and optional generative rendering.</dd>
+
               <dt>Estimated development</dt>
               <dd>8 to 10 weeks</dd>
             </dl>
@@ -144,68 +173,57 @@
       </div>
     </section>
 
-    <section class="intro comparison" id="comparativa">
+    <section class="intro comparison" id="tecnico">
       <div class="wrap">
-        <p class="eyebrow dark rv in">Scope comparison</p>
-        <h2 class="rv in tall-light">From buildable core to full public participation layer.</h2>
+        <p class="eyebrow dark rv in">Technical foundation</p>
+
+        <h2 class="rv in tall-light">
+          The backend turns the stamp into campaign value.
+        </h2>
+
         <p class="rv in">
-          The added technical layers clarify what is required to make the
-          prototype production-ready. The split below keeps the Core focused,
-          makes moderation mandatory only when content becomes public, and
-          treats the tree as an installation layer that depends on curated data.
+          The visual experience creates the stamp. The backend stores the
+          participation behind it: user/session, selected shape, filter, color,
+          timestamp, image record and campaign source.
         </p>
 
         <div class="comparison-grid rv in">
           <article>
-            <h3>1. Core</h3>
-            <p>Minimum production platform for users to create, save and share personal stamps.</p>
-            <dl>
-              <dt>Mandatory</dt>
-              <dd>Mobile capture/upload flow, album, basic animations, export/share, database with photos by user/session ID, desktop fallback with QR to mobile, and admin tools to inspect/delete data.</dd>
-              <dt>Pros</dt>
-              <dd>Fastest launch, measurable campaign participation, useful even without public publishing.</dd>
-              <dt>Optional</dt>
-              <dd>Full registration, CDN, extra UX mapping, and interface beautify beyond the current design system pass.</dd>
-            </dl>
+            <h3>Frontend</h3>
+            <p>
+              Mobile-first interface for image capture, visual treatment,
+              stamp generation, album, download and sharing.
+            </p>
           </article>
 
           <article>
-            <h3>2. Collective Gallery</h3>
-            <p>Public archive layer where personal stamps can be submitted, reviewed and published.</p>
-            <dl>
-              <dt>Mandatory</dt>
-              <dd>Everything in Core, consent flow, submission states, moderation dashboard, approve/reject/delete actions, public gallery and approved content feed.</dd>
-              <dt>Pros</dt>
-              <dd>Turns isolated outputs into campaign material, protects public display through review, and creates a reusable archive.</dd>
-              <dt>Optional</dt>
-              <dd>AI-assisted moderation, user accounts, advanced filtering, CRM hooks and CDN tuning.</dd>
-            </dl>
+            <h3>Backend</h3>
+            <p>
+              Rails API or server-rendered platform with database, image
+              storage, sessions, admin dashboard and data deletion tools.
+            </p>
           </article>
 
           <article>
-            <h3>3. Tree Installation</h3>
-            <p>Display layer where approved stamps become part of a collective flame tree.</p>
-            <dl>
-              <dt>Mandatory</dt>
-              <dd>Everything in Core and Collective Gallery, approved stamp feed, basic crowdsourced tree designed and tested for one device/resolution, fallback state and operation handoff.</dd>
-              <dt>Pros</dt>
-              <dd>Creates the strongest public-facing moment and turns campaign participation into a living artwork.</dd>
-              <dt>Optional</dt>
-              <dd>Polished tree, responsive tree, WebGL/particles, live counters, location grouping and multi-screen deployment.</dd>
-            </dl>
+            <h3>Public layer</h3>
+            <p>
+              Moderated gallery or installation feed using only approved
+              submissions when the project becomes publicly participatory.
+            </p>
           </article>
         </div>
 
         <div class="add-ons rv in">
-          <h3>Additional layers</h3>
+          <h3>Technical decisions to confirm</h3>
           <ul>
-            <li><strong>Registration:</strong> sign up, login, password management and verification. Approx. +10 days.</li>
-            <li><strong>Polished crowdsourced tree:</strong> stronger motion, composition and visual finish. Approx. +7 days.</li>
-            <li><strong>Responsive crowdsourced tree:</strong> multiple viewport/display layouts beyond one fixed resolution. Approx. +7 days.</li>
-            <li><strong>AI moderation:</strong> semi-automated review/censorship support; still requires human moderation policy.</li>
-            <li><strong>UX mapping:</strong> audit missing components, screens, edge states and admin flows before production.</li>
-            <li><strong>CDN setup:</strong> improve load times for image-heavy campaign assets.</li>
-            <li><strong>Interface beautify:</strong> refine the current UI while staying inside the Flame Stamps design system.</li>
+            <li><strong>Domain:</strong> campaign domain or subdomain.</li>
+            <li><strong>Hosting:</strong> production hosting for frontend and backend.</li>
+            <li><strong>Storage:</strong> persistent image storage and thumbnails.</li>
+            <li><strong>Sessions:</strong> anonymous device session or registered users.</li>
+            <li><strong>Data:</strong> what user/contact data is collected and why.</li>
+            <li><strong>Consent:</strong> privacy copy, public display consent and deletion path.</li>
+            <li><strong>Moderation:</strong> required only when content becomes public.</li>
+            <li><strong>CDN:</strong> recommended for image-heavy public traffic.</li>
           </ul>
         </div>
       </div>
@@ -214,30 +232,36 @@
     <section class="collective" id="roadmap">
       <div class="wrap">
         <p class="eyebrow rv in">Recommended roadmap</p>
-        <h2 class="rv in tall-light">Start with the individual ritual, then open it to the city.</h2>
+
+        <h2 class="rv in tall-light">
+          Build the core first, then open participation.
+        </h2>
+
         <p class="rv in">
-          The safest production path is progressive. First ship the core stamp
-          experience, then add public participation and governance, and finally
-          use the curated feed as material for an installation.
+          The safest production path is progressive: launch the individual
+          experience, add public participation after moderation is ready, then
+          use approved content for a display or installation.
         </p>
 
         <ol class="roadmap rv in">
           <li>
             <div>
               <strong>Core</strong>
-              <span>Create, save and share personal Flame Stamps with backend data attached to each output.</span>
+              <span>4–5 weeks: create, save and share Flame Stamps with backend data attached.</span>
             </div>
           </li>
+
           <li>
             <div>
               <strong>Collective Gallery</strong>
-              <span>Turn individual participation into a moderated public archive of approved campaign submissions.</span>
+              <span>6–8 weeks: publish approved submissions as a curated campaign archive.</span>
             </div>
           </li>
+
           <li>
             <div>
               <strong>Tree Installation</strong>
-              <span>Transform curated stamps into a public participatory artwork that grows throughout the season.</span>
+              <span>8–10 weeks: turn approved stamps into a public digital tree.</span>
             </div>
           </li>
         </ol>
@@ -246,29 +270,31 @@
 
     <section class="cta" id="notas">
       <div class="wrap">
-        <p class="eyebrow rv in" style="text-align:center;">Production notes</p>
+        <p class="eyebrow rv in" style="text-align:center;">Production requirements</p>
+
         <h2 class="rv in">What must be defined before build</h2>
+
         <p class="rv in">
-          The prototype should be treated as a visual and conceptual reference.
-          A production build needs clear decisions around data, consent,
-          moderation, deployment and operational ownership.
+          The current prototype should be treated as a visual reference. A
+          production build needs clear decisions around technology, hosting,
+          content, data, consent and operational responsibility.
         </p>
 
         <div class="notes rv in">
           <article>
-            <h3>Data and consent</h3>
+            <h3>Mandatory for Core</h3>
             <p>
-              If user images are stored or displayed publicly, the platform
-              needs privacy copy, consent states, deletion paths and moderation
-              before publication.
+              Final assets, domain, hosting, mobile flow, image generation,
+              backend, database, storage, admin access and QA across mobile
+              browsers.
             </p>
           </article>
+
           <article>
-            <h3>Campaign utility</h3>
+            <h3>Mandatory for Public Use</h3>
             <p>
-              The backend is a key value layer: every stamp becomes both a
-              user-facing image and a measurable participation record for the
-              campaign team.
+              Consent states, moderation, approved publishing flow, privacy
+              copy, deletion mechanism and responsibility for reviewing content.
             </p>
           </article>
         </div>
@@ -284,7 +310,8 @@
       <div class="flogo">
         <img src="./img/01_Logo/01_Logo_Horizontal/01_Horizontal_Flame%20Red/Horizontal_Flame%20Red.png" alt="Flame Stamps">
       </div>
-      <span>Proposal roadmap - Flame Tree Season</span>
+
+      <span>Proposal roadmap — Flame Tree Season</span>
     </div>
   </footer>
 </body>
