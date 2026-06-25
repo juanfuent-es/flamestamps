@@ -180,7 +180,7 @@ body::after {
 .hero h1 {
     font-size: clamp(44px, 8vw, 76px);
     color: var(--cream);
-    margin-bottom: 18px;
+    margin: 0.2em 0;
 }
 
 .hero h1 em {
@@ -860,10 +860,10 @@ footer span {
 }
 
 :where(.proposal-page) li {
-    color: var(--cream);
     opacity: .82;
-    font-size: 16px;
+    font-size: 1.25em;
     line-height: 1.55;
+    text-align: left;
 }
 
 :where(.proposal-page) a {

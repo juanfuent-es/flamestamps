@@ -78,6 +78,10 @@ html {
     scrollbar-width: thin;
 }
 
+[id] {
+    scroll-margin-top: var(--space-5);
+}
+
 ::-webkit-scrollbar {
     width: .75rem;
 }
@@ -154,6 +158,7 @@ body > header {
 
 .hero .container, .intro .container, .collective .container, .cta .container {
     max-width: var(--measure-narrow);
+    text-align: center;
 }
 
 .eyebrow {
@@ -183,6 +188,7 @@ main > section {
 .intro, .production, .collective, .cta {
     padding-top: var(--space-8);
     padding-bottom: var(--space-8);
+    text-align: left;
 }
 
 main > section + section {
@@ -250,8 +256,9 @@ h1 {
 }
 
 h2 {
-    margin-top: var(--space-2);
+    margin: .5em 0;
     font-size: 2.7rem;
+    padding-bottom: .25em;
 }
 
 .hero h1 {
@@ -377,8 +384,8 @@ small {
 }
 
 .phase-card p {
-    font-size: 1rem;
     line-height: 1.6;
+    font-weight: 100;
 }
 
 .phase-card p:last-child {
@@ -394,6 +401,10 @@ small {
     gap: .6rem;
     padding-left: 0;
     list-style: none;
+    justify-content: start;
+    grid-auto-flow: row;
+    justify-items: start;
+    margin: 1.5em 0;
 }
 
 .feature-list li, .requirement-list li {
