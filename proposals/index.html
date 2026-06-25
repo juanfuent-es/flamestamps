@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Propuesta de desarrollo para Flame Stamps: plataforma core, galeria colectiva e instalacion digital.">
+  <title>Flame Stamps | Propuesta de desarrollo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="proposal-page">
+  <header class="hero" id="inicio">
+    <nav class="proposal-nav" aria-label="Navegacion de propuesta">
+      <a href="#resumen">Resumen</a>
+      <a href="#alcances">Alcances</a>
+      <a href="#comparativa">Comparativa</a>
+      <a href="#roadmap">Roadmap</a>
+    </nav>
+
+    <div class="topcredit amiri">
+      <span>Dubai - Flame Tree Season</span>
+      <span>Development proposal</span>
+    </div>
+
+    <div class="float" style="left:-4vw; top:18vh; width:150px; transform:rotate(-18deg);">
+      <img src="../img/04_Visual%20Elements/02_Vector/01_Vector_Petal%201/02_Petal%201_Soft%20Yellow/Petal%201_Soft%20Yellow.png" alt="">
+    </div>
+    <div class="float" style="right:-3vw; top:28vh; width:130px; transform:rotate(17deg);">
+      <img src="../img/04_Visual%20Elements/02_Vector/02_Vector_Petal%202/01_Petal%202_Flame%20Red/Petal%202_Flame%20Red.png" alt="">
+    </div>
+    <div class="float" style="right:12vw; bottom:8vh; width:92px; opacity:.62;">
+      <img src="../img/04_Visual%20Elements/02_Vector/03_Vector_Circle/Circle_Accent.png" alt="">
+    </div>
+
+    <div class="hero-inner">
+      <div class="logo" aria-hidden="true">
+        <img src="../img/01_Logo/02_Logo_Vertical/02_Vertical_Light%20Yellow/Vertical_Light%20Yellow.png" alt="">
+      </div>
+      <p class="proposal-kicker">Propuesta de sitio y plataforma participativa</p>
+      <h1 class="tall">Flame Stamps <em>Campaign Platform</em></h1>
+      <p class="proposal-hero-copy">Una experiencia web mobile-first para crear estampas botanicas, convertirlas en participacion medible y escalar hacia archivo colectivo o instalacion publica.</p>
+    </div>
+    <div class="scrolldown" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="intro" id="resumen">
+      <img class="wm" src="../img/01_Logo/03_Logo_Mark/03_Mark_Black/Mark_Black.png" alt="">
+      <div class="wrap">
+        <p class="eyebrow amiri">Resumen editorial</p>
+        <h2>Del sello personal a una capa publica de campana.</h2>
+        <p>Flame Stamps parte de una accion simple: capturar o subir una imagen, vestirla con el sistema visual de Flame Tree Season y exportar una estampa lista para descargar o compartir.</p>
+        <p>La propuesta se organiza en tres niveles progresivos. El primero entrega la experiencia funcional y la base de datos; el segundo agrega publicacion, consentimiento y moderacion; el tercero transforma las estampas aprobadas en una pieza visual colectiva para pantalla o venue.</p>
+      </div>
+    </section>
+
+    <section class="screens" id="alcances">
+      <div class="wrap">
+        <div class="head">
+          <p class="eyebrow amiri">Tres alcances de desarrollo</p>
+          <h2>Bloques progresivos, cada uno construido sobre el anterior.</h2>
+        </div>
+
+        <div class="proposal-grid" aria-label="Alcances de propuesta">
+          <article class="proposal-card">
+            <p class="eyebrow amiri">01 - Core</p>
+            <h3>Core Campaign Platform</h3>
+            <p>Convierte el prototipo visual en una experiencia mobile-first donde cada usuario genera una estampa descargable y el sistema guarda participacion, imagen y metadata.</p>
+            <ul class="proposal-list">
+              <li>Landing, experiencia mobile y fallback desktop con QR.</li>
+              <li>Camara o carga de imagen, seleccion de forma, filtro y color.</li>
+              <li>Generacion de estampa, album personal, descarga y native share.</li>
+              <li>Base de datos con usuarios/sesiones, ID, fotos, stamps y metadata.</li>
+              <li>Dashboard basico de admin para revisar y eliminar data si es necesario.</li>
+            </ul>
+            <dl>
+              <dt>Tiempo estimado</dt>
+              <dd>4 a 5 semanas</dd>
+            </dl>
+          </article>
+
+          <article class="proposal-card">
+            <p class="eyebrow amiri">02 - Collective</p>
+            <h3>Collective Gallery + Moderation</h3>
+            <p>Agrega una capa publica y curatorial. Los usuarios pueden enviar su estampa a galeria, mientras el equipo aprueba, rechaza, elimina y prepara contenido para archivo.</p>
+            <ul class="proposal-list">
+              <li>Incluye todo el Core.</li>
+              <li>Flujo de envio a galeria con consentimiento de publicacion.</li>
+              <li>Estados pending, approved y rejected, con visibilidad publica o privada.</li>
+              <li>Galeria publica con feed aprobado y filtros por forma, color, filtro o fecha.</li>
+              <li>Moderacion con cola de revision, flagging y bloqueo basico por usuario/sesion.</li>
+            </ul>
+            <dl>
+              <dt>Tiempo estimado</dt>
+              <dd>6 a 8 semanas</dd>
+            </dl>
+          </article>
+
+          <article class="proposal-card">
+            <p class="eyebrow amiri">03 - Tree</p>
+            <h3>Living Tree Installation</h3>
+            <p>Usa las estampas aprobadas como componentes visuales de un arbol digital colectivo, pensado para una pantalla, proyeccion o display de venue.</p>
+            <ul class="proposal-list">
+              <li>Incluye Core y Collective Gallery.</li>
+              <li>Feed aprobado conectado a la visualizacion del arbol.</li>
+              <li>Arbol crowdsourced basico para un dispositivo o resolucion definida.</li>
+              <li>Animaciones basicas de interfaz y composicion con estampas aprobadas.</li>
+              <li>Refresco periodico, pantalla fallback y documentacion tecnica de operacion.</li>
+            </ul>
+            <dl>
+              <dt>Tiempo estimado</dt>
+              <dd>8 a 10 semanas</dd>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro comparison" id="comparativa">
+      <div class="wrap">
+        <p class="eyebrow amiri">Comparativa de valor</p>
+        <h2>Que es mandatorio, que aporta valor y que puede quedar como capa opcional.</h2>
+        <p>La lectura recomendada es incremental: Core crea el producto minimo de campana; Collective lo vuelve publicable y gobernable; Tree lo convierte en una instalacion visible. Saltar capas aumenta riesgo porque cada nivel depende de datos, consentimiento y moderacion del anterior.</p>
+
+        <div class="comparison-grid">
+          <article>
+            <h3>Core</h3>
+            <p>Entrega la experiencia individual completa y la infraestructura minima para que la campana tenga datos utiles.</p>
+            <dl>
+              <dt>Mandatorio</dt>
+              <dd>Mobile web, desktop QR, captura/carga, generacion de estampa, album, descarga/share, base de datos, storage y admin basico.</dd>
+              <dt>Pros</dt>
+              <dd>Menor riesgo, entrega rapida, base tecnica reutilizable y medicion real de participacion.</dd>
+              <dt>Opcional</dt>
+              <dd>Email/contact capture, QR o hashtag embebido, mayor polish visual y componentes extra de onboarding.</dd>
+            </dl>
+          </article>
+
+          <article>
+            <h3>Collective</h3>
+            <p>Vuelve la participacion publica sin publicar contenido automaticamente ni comprometer la seguridad de marca.</p>
+            <dl>
+              <dt>Mandatorio</dt>
+              <dd>Todo Core, consentimiento, estados de envio, galeria publica, feed aprobado y moderacion con approve/reject/delete.</dd>
+              <dt>Pros</dt>
+              <dd>Archivo curado, contenido reutilizable, control editorial y base directa para visualizaciones futuras.</dd>
+              <dt>Opcional</dt>
+              <dd>Filtros avanzados, exportaciones internas, ban/block mas granular, IA de premoderacion y dashboards extendidos.</dd>
+            </dl>
+          </article>
+
+          <article>
+            <h3>Tree</h3>
+            <p>Transforma el archivo aprobado en una pieza publica, pero requiere decisiones de resolucion, venue y operacion.</p>
+            <dl>
+              <dt>Mandatorio</dt>
+              <dd>Core y Collective, feed moderado, visualizacion del arbol, display target, animacion basica, fallback y handoff tecnico.</dd>
+              <dt>Pros</dt>
+              <dd>Mayor impacto publico, pieza participativa viva y narrativa clara entre usuario, campana e instalacion.</dd>
+              <dt>Opcional</dt>
+              <dd>Responsive/multi-resolucion, WebGL, particulas, crecimiento generativo, estados idle/active y agrupacion por metadata.</dd>
+            </dl>
+          </article>
+        </div>
+
+        <aside class="add-ons" aria-labelledby="capas-adicionales">
+          <h3 id="capas-adicionales">Capas adicionales</h3>
+          <ul>
+            <li><strong>Beautify de interfaz:</strong> refinamiento visual siguiendo el sistema de diseno.</li>
+            <li><strong>Registro de usuarios:</strong> sign up, login, password management y verificacion. +10 dias aprox.</li>
+            <li><strong>Arbol mas pulido:</strong> composicion visual y motion design de mayor calidad. +7 dias aprox.</li>
+            <li><strong>Arbol responsivo:</strong> soporte para multiples pantallas y resoluciones. +7 dias aprox.</li>
+            <li><strong>IA de moderacion:</strong> censura o prefiltrado semi-automatizado con revision humana.</li>
+            <li><strong>Mapeo UX:</strong> inventario de componentes, paginas y estados faltantes.</li>
+            <li><strong>CDN:</strong> configuracion para acelerar imagenes, stamps y assets de campana.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="collective" id="roadmap">
+      <div class="wrap">
+        <p class="eyebrow amiri">Roadmap recomendado</p>
+        <h2>Produccion por fases para reducir riesgo.</h2>
+        <p>La ruta mas solida es entregar primero la experiencia individual, validar flujo y datos, y despues abrir capas publicas. La instalacion debe entrar cuando ya exista contenido moderado y una definicion clara de display.</p>
+        <ol class="roadmap">
+          <li>
+            <span><strong>Core Campaign Platform</strong> Producto funcional para crear, guardar, descargar y medir Flame Stamps.</span>
+          </li>
+          <li>
+            <span><strong>Collective Gallery</strong> Capa publica con consentimiento, archivo curado y moderacion operable por el equipo.</span>
+          </li>
+          <li>
+            <span><strong>Living Tree Installation</strong> Visualizacion publica alimentada por stamps aprobados y preparada para un display definido.</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cta" id="notas">
+      <div class="wrap">
+        <p class="eyebrow amiri">Notas de produccion</p>
+        <h2>El prototipo es referencia visual; la produccion necesita reglas operativas.</h2>
+        <p>Si se almacenan imagenes de usuarios, deben existir privacidad, consentimiento y mecanismo de borrado. Si el contenido se muestra publicamente, la moderacion debe ocurrir antes de publicar.</p>
+
+        <div class="notes" aria-label="Notas tecnicas">
+          <article>
+            <h3>Backend como valor</h3>
+            <p>La base de datos convierte cada estampa en un objeto de campana: imagen, usuario o sesion, timestamp, seleccion visual, estado de publicacion y metadata util para analitica o curaduria.</p>
+          </article>
+          <article>
+            <h3>Instalacion como scope separado</h3>
+            <p>Venue, hardware, internet, pantallas, proyeccion, soporte en sitio, traduccion oficial, costos cloud y operacion extendida deben definirse fuera del alcance base.</p>
+          </article>
+        </div>
+
+        <a class="btn" href="../index.html">Ver referencia visual</a>
+        <span class="url">Flame Stamps - Dubai Flame Tree Season</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="flogo">
+        <img src="../img/01_Logo/01_Logo_Horizontal/01_Horizontal_Flame%20Red/Horizontal_Flame%20Red.png" alt="Flame Stamps">
+      </div>
+      <span>Proposal structure - Core, Collective, Tree</span>
+    </div>
+  </footer>
+</body>
+</html>
