@@ -17,224 +17,147 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
-  <header>
-    <p>Development proposal</p>
-    <h1>Flame Stamps</h1>
-    <p>
-      Technical scope for developing the Flame Stamps experience in three
-      scalable production levels: visual core, campaign data platform and
-      collective data engine.
-    </p>
+<body class="proposal-page">
+  <header class="hero" id="inicio">
+    <nav class="proposal-nav" aria-label="Secciones de propuesta">
+      <a href="#resumen">Resumen</a>
+      <a href="#alcances">Alcances</a>
+      <a href="#comparativa">Comparativa</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#notas">Notas</a>
+    </nav>
+
+    <div class="topcredit">
+      <span>Flame Stamps</span>
+    </div>
+
+    <div class="float" data-depth="0.12" style="width:130px; top:6%; left:4%; opacity:.55;">
+      <img src="./img/04_Visual%20Elements/02_Vector/01_Vector_Petal%201/02_Petal%201_Soft%20Yellow/Petal%201_Soft%20Yellow.png" alt="">
+    </div>
+    <div class="float" data-depth="0.62" style="width:86px; top:64%; left:11%; opacity:.9;">
+      <img src="./img/04_Visual%20Elements/02_Vector/02_Vector_Petal%202/01_Petal%202_Flame%20Red/Petal%202_Flame%20Red.png" alt="">
+    </div>
+    <div class="float" data-depth="0.08" style="width:180px; top:10%; right:3%; opacity:.38;">
+      <img src="./img/04_Visual%20Elements/02_Vector/03_Vector_Circle/Circle_Accent.png" alt="">
+    </div>
+
+    <div class="hero-inner">
+      <div class="logo">
+        <img src="./img/01_Logo/02_Logo_Vertical/02_Vertical_Light%20Yellow/Vertical_Light%20Yellow.png" alt="Flame Stamps">
+      </div>
+      <p>Mobile-first campaign data platform collective.</p>
+      <h1 class="tall">Dev<em>Specs</em></h1>
+      <p class="sub proposal-hero-copy">Launch the stamp experience first; scale into data, moderation and collective participation later.</p>
+      </div>
+    <div class="scrolldown" aria-hidden="true"></div>
   </header>
 
   <main>
-    <section>
-      <h2>Production Structure</h2>
-      <p>
-        The project is divided into three deliverables. Each level adds a
-        different technical layer: first the visual experience, then persistent
-        campaign data, and finally collective participation through a managed
-        dashboard and public output.
-      </p>
-    </section>
-
-    <section>
+    <section class="intro">
       <div class="container">
-        <h2>1. Core Visual MVP</h2>
-      <p>
-        A client-side mobile experience focused on creating and exporting Flame
-        Stamps. This version validates the main interaction without requiring
-        backend, user accounts, persistent storage or dashboard.
-      </p>
-
-      <h3>Includes</h3>
-      <ul>
-        <li>Landing or entry screen.</li>
-        <li>Mobile-first interface.</li>
-        <li>Camera capture or image upload.</li>
-        <li>Selection of brand shapes.</li>
-        <li>Selection of color treatment or filter.</li>
-        <li>Canvas-based image processing.</li>
-        <li>Stamp generation.</li>
-        <li>Downloadable image output.</li>
-        <li>Native share support when available.</li>
-        <li>Local album stored in the browser.</li>
-      </ul>
-
-      <h3>Technical Specs</h3>
-      <ul>
-        <li>Frontend-only build.</li>
-        <li>HTML, CSS and JavaScript.</li>
-        <li>Camera API or file upload input.</li>
-        <li>Canvas rendering for filter, shape and export.</li>
-        <li>LocalStorage or IndexedDB for temporary album data.</li>
-        <li>No server-side image persistence.</li>
-        <li>No user registration.</li>
-        <li>No moderation dashboard.</li>
-      </ul>
-
-      <h3>Limitations</h3>
-      <ul>
-        <li>Data can be lost if the user clears browser storage.</li>
-        <li>The campaign team does not receive user data or image records.</li>
-        <li>No public gallery or collective output.</li>
-      </ul>
-
-      <p><strong>Estimated development:</strong> 3–4 weeks.</p>
+        <p class="eyebrow">Production structure</p>
+        <h2>Build the stamp first, then grow the <em>system</em>.</h2>
+        <p>
+          Flame Stamps can be produced in three layers. The first validates the
+          visual interaction. The second stores campaign data. The third turns
+          approved participation into a collective public output.
+        </p>
       </div>
     </section>
 
-    <section>
-      <h2>2. Campaign Data Platform</h2>
-      <p>
-        A production version with backend, database, user/session management,
-        mailing capabilities and persistent image storage. This level turns each
-        stamp into a measurable campaign record.
-      </p>
+    <section class="production">
+      <div class="container">
+        <p class="eyebrow">Three production levels</p>
+        <h2>Choose the layer that matches the <em>campaign moment</em>.</h2>
 
-      <h3>Includes</h3>
-      <ul>
-        <li>Everything in Core Visual MVP.</li>
-        <li>Production domain and hosting.</li>
-        <li>Backend application.</li>
-        <li>Database for users, sessions and stamps.</li>
-        <li>Image upload and persistent storage.</li>
-        <li>User registration or lightweight account flow.</li>
-        <li>Email capture and mailing-ready user records.</li>
-        <li>Password management, if account login is required.</li>
-        <li>Personal album connected to user/session data.</li>
-        <li>Admin dashboard for reviewing records.</li>
-        <li>Basic data export for campaign reporting.</li>
-      </ul>
+        <div class="phase-grid">
+          <article class="phase-card">
+            <p class="eyebrow">01</p>
+            <h3>Core Visual MVP</h3>
+            <p>
+              A frontend-only mobile experience for capturing, composing and
+              exporting Flame Stamps.
+            </p>
+            <ul class="feature-list">
+              <li>Camera capture or image upload.</li>
+              <li>Shape, color and filter selection.</li>
+              <li>Canvas-based stamp export.</li>
+              <li>Local browser album.</li>
+            </ul>
+            <p><strong>3-4 weeks</strong></p>
+          </article>
 
-      <h3>Technical Specs</h3>
-      <ul>
-        <li>Rails backend or equivalent production framework.</li>
-        <li>Relational database for users, stamps and events.</li>
-        <li>Image storage service for originals and generated outputs.</li>
-        <li>SSL-enabled production environment.</li>
-        <li>Authentication or anonymous device-session model.</li>
-        <li>Mailer configuration for transactional or campaign emails.</li>
-        <li>Admin access for data management.</li>
-        <li>Basic analytics events for stamp creation, download and share.</li>
-      </ul>
+          <article class="phase-card">
+            <p class="eyebrow">02</p>
+            <h3>Campaign Data Platform</h3>
+            <p>
+              A production backend for persistent albums, user or session
+              records, image storage and reporting.
+            </p>
+            <ul class="feature-list">
+              <li>Database and image storage.</li>
+              <li>Email or lightweight account flow.</li>
+              <li>Admin review and export tools.</li>
+              <li>Basic campaign analytics.</li>
+            </ul>
+            <p><strong>6-8 weeks</strong></p>
+          </article>
 
-      <h3>Data Stored</h3>
-      <ul>
-        <li>User or session ID.</li>
-        <li>Name and email, if required by the campaign.</li>
-        <li>Generated stamp image.</li>
-        <li>Selected shape, filter and color.</li>
-        <li>Creation date and time.</li>
-        <li>Download and share events.</li>
-        <li>Campaign source, QR or entry point.</li>
-      </ul>
-
-      <h3>Limitations</h3>
-      <ul>
-        <li>No public gallery unless scoped.</li>
-        <li>No public tree or installation output.</li>
-        <li>No advanced moderation unless public publishing is added.</li>
-      </ul>
-
-      <p><strong>Estimated development:</strong> 6–8 weeks.</p>
+          <article class="phase-card">
+            <p class="eyebrow">03</p>
+            <h3>Collective Data Engine</h3>
+            <p>
+              A moderation and publishing layer for feeding a public gallery,
+              tree visualization or installation output.
+            </p>
+            <ul class="feature-list">
+              <li>Consent and submission states.</li>
+              <li>Moderation dashboard.</li>
+              <li>Approved public feed.</li>
+              <li>Collective visual output.</li>
+            </ul>
+            <p><strong>8-12 weeks</strong></p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>3. Collective Data Engine</h2>
-      <p>
-        A collective participation layer where user-generated stamps can be
-        submitted, filtered, moderated and used as data for a public gallery,
-        tree visualization or installation output.
-      </p>
-
-      <h3>Includes</h3>
-      <ul>
-        <li>Everything in Campaign Data Platform.</li>
-        <li>Submit-to-collective flow.</li>
-        <li>Consent for public use.</li>
-        <li>Submission states: private, pending, approved, rejected.</li>
-        <li>Dashboard for filtering and managing submissions.</li>
-        <li>Moderation actions: approve, reject, hide, delete.</li>
-        <li>Public or internal gallery feed.</li>
-        <li>Approved data feed for visualization.</li>
-        <li>Basic collective tree or visual output.</li>
-      </ul>
-
-      <h3>Dashboard Functions</h3>
-      <ul>
-        <li>View all submitted stamps.</li>
-        <li>Filter by date, user, shape, color, status or source.</li>
-        <li>Approve or reject public submissions.</li>
-        <li>Delete images or user records if required.</li>
-        <li>Export selected data.</li>
-        <li>Manage which images feed the public output.</li>
-      </ul>
-
-      <h3>Technical Specs</h3>
-      <ul>
-        <li>Moderation queue.</li>
-        <li>Public/private publishing states.</li>
-        <li>Approved content API or feed.</li>
-        <li>Gallery or installation frontend.</li>
-        <li>Optional CDN for image-heavy traffic.</li>
-        <li>Optional AI-assisted moderation.</li>
-        <li>Optional WebGL or particle-based visualization.</li>
-      </ul>
-
-      <h3>Limitations</h3>
-      <ul>
-        <li>Hardware is not included by default.</li>
-        <li>Venue setup is not included by default.</li>
-        <li>On-site technical support must be scoped separately.</li>
-        <li>Advanced generative visualization requires additional production time.</li>
-      </ul>
-
-      <p><strong>Estimated development:</strong> 8–12 weeks.</p>
+    <section class="collective">
+      <div class="container">
+        <p class="eyebrow">Before development</p>
+        <h2>Confirm the <em>rules</em> before building the platform.</h2>
+        <ul class="requirement-list">
+          <li>Final scope and selected production level.</li>
+          <li>Approved brand assets and visual guidelines.</li>
+          <li>Domain, hosting and deployment requirements.</li>
+          <li>User model: local, anonymous session or account.</li>
+          <li>Email, privacy, consent and data retention copy.</li>
+          <li>Moderation responsibility if content becomes public.</li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2>Required Before Development</h2>
-      <ul>
-        <li>Final confirmation of scope.</li>
-        <li>Approved brand assets and visual guidelines.</li>
-        <li>Domain or subdomain decision.</li>
-        <li>Hosting and deployment requirements.</li>
-        <li>Storage requirements for generated images.</li>
-        <li>User model: local, anonymous session or registered account.</li>
-        <li>Email and mailing requirements.</li>
-        <li>Data retention and deletion rules.</li>
-        <li>Consent and privacy copy.</li>
-        <li>Moderation responsibility if content becomes public.</li>
-        <li>Definition of whether the collective output is gallery, tree or installation.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Recommended Path</h2>
-      <ol>
-        <li>
-          <strong>Start with Core Visual MVP</strong> to validate the interaction,
-          visual output and mobile experience.
-        </li>
-        <li>
-          <strong>Move into Campaign Data Platform</strong> if the campaign needs
-          users, email capture, persistent albums, data and reporting.
-        </li>
-        <li>
-          <strong>Extend into Collective Data Engine</strong> if the goal is to
-          create a public gallery, moderated archive or installation.
-        </li>
-      </ol>
+    <section class="cta">
+      <div class="container">
+        <p class="eyebrow">Recommended path</p>
+        <h2>Start with the visual MVP and let the <em>collective layer</em> grow.</h2>
+        <ol class="path-list">
+          <li><strong>Prototype the stamp flow</strong> and validate the mobile interaction.</li>
+          <li><strong>Add campaign infrastructure</strong> only when persistent data is required.</li>
+          <li><strong>Publish collective output</strong> when moderation and consent are defined.</li>
+        </ol>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>Flame Stamps · Technical development scope</p>
+    <div class="container">
+      <p>Flame Stamps / Technical development scope</p>
+    </div>
   </footer>
 </body>
 
