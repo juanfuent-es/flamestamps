@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flame Stamps - Sistema editorial digital</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <p class="tagline">Dubai &middot; Flame Tree Season</p>
+        <h1>Flame <em>Stamps</em></h1>
+        <p class="descriptor">
+          Un sistema editorial digital para convertir la temporada del flame
+          tree en una experiencia visual, coleccionable y compartible.
+        </p>
+      </div>
+
+      <div class="hero__media" aria-hidden="true">
+        <img
+          class="hero__mark"
+          src="img/01_Logo/02_Logo_Vertical/02_Vertical_Light%20Yellow/Vertical_Light%20Yellow.png"
+          alt="">
+        <img
+          class="hero__petal"
+          src="img/04_Visual%20Elements/02_Vector/01_Vector_Petal%201/01_Petal%201_Flame%20Red/Petal%201_Flame%20Red.png"
+          alt="">
+        <img
+          class="hero__tree"
+          src="img/04_Visual%20Elements/01_Cutouts/Cutout_Tree.png"
+          alt="">
+      </div>
+    </section>
+
+    <section>
+      <div class="page-wrap content-grid">
+        <div class="content-stack">
+          <p class="eyebrow">Contenido de diseño</p>
+          <h2>Editorial, cálido y móvil desde la primera pantalla</h2>
+          <p class="lede">
+            La identidad se apoya en lectura de alto contraste, serif variable,
+            superficies oscuras y acentos de temporada. El sistema debe sentirse
+            como una publicación digital con gesto botánico, no como una landing
+            genérica de producto.
+          </p>
+          <p>
+            La composición base usa secciones de ancho completo, contenido
+            contenido en columnas legibles y elementos visuales derivados de la
+            marca: pétalos, recortes de árbol, sellos y el logotipo en sus
+            variantes Flame Red, Light Yellow y Black.
+          </p>
+        </div>
+
+        <aside class="panel" aria-label="Puntaje de contraste">
+          <p class="eyebrow">Puntaje de contraste</p>
+          <div class="score">
+            <strong>18.61:1</strong>
+            <span>Night #1C0F0A sobre Cream #FFFFF6. Base recomendada para cuerpo de texto y lectura larga.</span>
+          </div>
+          <p>
+            Para botones de texto, Flame Red mantiene mejor contraste que Flame
+            Orange. Orange queda reservado para énfasis, hover, selección y
+            elementos visuales grandes.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section>
+      <div class="page-wrap content-stack">
+        <p class="eyebrow">Detalle técnico</p>
+        <h2>Tokens mínimos para producción</h2>
+
+        <div class="technical-detail">
+          <article>
+            <h3>Titulares</h3>
+            <p>
+              <code>h1</code> usa <code>--fs-h1</code> o <code>--fs-hero</code>,
+              con Awesome Serif y variación alta: <code>wght 540</code>,
+              <code>hght 1000</code>. La regla base viste el elemento, no una
+              clase decorativa.
+            </p>
+          </article>
+
+          <article>
+            <h3>Subtitulares</h3>
+            <p>
+              <code>h2</code> baja peso y aumenta aire: <code>wght 320</code>,
+              line-height 1.16 y lectura balanceada. Debe abrir secciones
+              editoriales, no competir con el título principal.
+            </p>
+          </article>
+
+          <article>
+            <h3>Cuerpo</h3>
+            <p>
+              <code>p</code> usa <code>--fs-body</code>, line-height 1.72 y
+              <code>--color-text-muted</code> sobre Night. Para ledes,
+              <code>.lede</code> sube tamaño y contraste sin abandonar el tono
+              cálido.
+            </p>
+          </article>
+        </div>
+
+        <div class="panel">
+          <h3>Mapa de tokens</h3>
+          <ul class="token-list">
+            <li><code>--color-primary</code><span>Night, superficie editorial principal.</span></li>
+            <li><code>--color-neutral</code><span>Cream, texto principal y fondo cálido claro.</span></li>
+            <li><code>--color-tertiary</code><span>Flame Red, interacción de texto con buen contraste.</span></li>
+            <li><code>--color-accent</code><span>Flame Orange, energía visual y estados expresivos.</span></li>
+            <li><code>--fs-hero</code><span>Título de primera pantalla, escalado con <code>clamp()</code>.</span></li>
+            <li><code>--fs-body</code><span>Cuerpo editorial de lectura continua.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="guide">
+      <div class="page-wrap">
+        <div class="content-stack">
+          <p class="eyebrow">Reglas de guía de diseño</p>
+          <h2>Cómo aplicar el sistema</h2>
+          <p>
+            Las reglas priorizan tokens, semántica HTML y aplicaciones reales de
+            marca. Cuando haya que crear una nueva pantalla, primero se debe
+            reutilizar color, ritmo, tipografía y assets existentes.
+          </p>
+        </div>
+
+        <ul class="rule-list">
+          <li><span>Vestir elementos base: definir <code>h1</code>, <code>h2</code>, <code>p</code>, <code>section</code> y <code>a</code> antes de inventar clases como <code>.title</code> o <code>.body-copy</code>.</span></li>
+          <li><span>Usar Night y Cream para lectura larga; usar Sage e Ink para secciones públicas o colectivas.</span></li>
+          <li><span>Aplicar Flame Red en CTAs con texto; reservar Flame Orange para acento, hover, selección o piezas gráficas.</span></li>
+          <li><span>Usar Amiri solamente en microcopy poético, etiquetas de temporada o captions breves.</span></li>
+          <li><span>Usar pétalos, árbol y logo desde `img/` antes de crear nuevas ilustraciones.</span></li>
+          <li><span>Evitar tarjetas genéricas anidadas, fondos grises, gradientes sintéticos y decoraciones que no vengan de la marca.</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
